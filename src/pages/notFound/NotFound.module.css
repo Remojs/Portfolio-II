@@ -1,0 +1,60 @@
+.notFoundContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-dark);
+  text-align: center;
+  padding: 2rem;
+}
+
+.errorCode {
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  background: var(--gradient-cyber);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-shadow: var(--shadow-neon);
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.message {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: var(--muted-foreground);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .errorCode {
+    font-size: 5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .message {
+    font-size: 1rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,25 @@
+.indexPage {
+  min-height: 100vh;
+  background: transparent;
+  color: var(--foreground);
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerText {
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+  color: var(--muted-foreground);
+}

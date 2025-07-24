@@ -1,0 +1,149 @@
+.workExperienceSection {
+  padding: 5rem 1.5rem;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+  background: var(--gradient-cyber);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timelineCenter {
+  position: absolute;
+  width: 4px;
+  background: var(--gradient-cyber);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineContent {
+  position: relative;
+  width: calc(50% - 2rem);
+  background-color: var(--card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-neon);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: calc(50% + 2rem);
+}
+
+.timelineDot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: var(--shadow-neon);
+}
+
+.jobTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.period {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech {
+  font-size: 0.75rem;
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+  .timelineCenter {
+    left: 20px;
+  }
+  
+  .timelineContent {
+    width: calc(100% - 50px);
+    left: 40px;
+  }
+  
+  .timelineDot {
+    left: 20px;
+  }
+  
+  .left, .right {
+    left: 40px;
+  }
+}

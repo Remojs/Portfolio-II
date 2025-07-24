@@ -1,0 +1,196 @@
+/* Global CSS Variables */
+:root {
+  /* Cyberpunk Color Palette */
+  --background: hsl(240, 100%, 3%);
+  --foreground: hsl(220, 30%, 90%);
+
+  --card: hsl(240, 100%, 5%);
+  --card-foreground: hsl(220, 30%, 90%);
+
+  --popover: hsl(240, 100%, 8%);
+  --popover-foreground: hsl(220, 30%, 90%);
+
+  /* Neon Pink Primary */
+  --primary: hsl(330, 80%, 50%);
+  --primary-foreground: hsl(240, 100%, 5%);
+  --primary-glow: hsl(330, 80%, 65%);
+
+  /* Electric Purple Secondary */
+  --secondary: hsl(280, 80%, 55%);
+  --secondary-foreground: hsl(240, 100%, 5%);
+  --secondary-glow: hsl(280, 80%, 70%);
+
+  /* Neon Cyan Accent */
+  --accent: hsl(180, 80%, 45%);
+  --accent-foreground: hsl(240, 100%, 5%);
+  --accent-glow: hsl(180, 80%, 65%);
+
+  /* Electric Blue */
+  --electric: hsl(240, 80%, 55%);
+  --electric-foreground: hsl(220, 30%, 90%);
+  --electric-glow: hsl(240, 80%, 75%);
+
+  --muted: hsl(240, 50%, 15%);
+  --muted-foreground: hsl(220, 30%, 75%);
+
+  --destructive: hsl(0, 80%, 55%);
+  --destructive-foreground: hsl(240, 100%, 5%);
+
+  --border: hsl(280, 50%, 20%);
+  --input: hsl(240, 100%, 8%);
+  --ring: hsl(330, 100%, 55%);
+
+  --radius: 0.75rem;
+
+  /* Gradients */
+  --gradient-cyber: linear-gradient(135deg, hsl(330, 80%, 50%), hsl(280, 80%, 55%), hsl(240, 80%, 55%));
+  --gradient-neon: linear-gradient(90deg, hsl(330, 80%, 50%), hsl(180, 80%, 45%));
+  --gradient-dark: linear-gradient(to bottom, hsl(240, 100%, 3%) 0%, hsl(240, 100%, 5%) 20%, hsl(240, 100%, 7%) 50%, hsl(240, 100%, 5%) 80%, hsl(240, 100%, 3%) 100%);
+  --gradient-grid: linear-gradient(0deg, transparent 24%, hsl(280, 60%, 50%, 0.2) 25%, hsl(280, 60%, 50%, 0.2) 26%, transparent 27%, transparent 74%, hsl(280, 60%, 50%, 0.2) 75%, hsl(280, 60%, 50%, 0.2) 76%, transparent 77%);
+
+  /* Shadows & Glows */
+  --shadow-neon: 0 0 15px hsla(330, 80%, 50%, 0.4), 0 0 30px hsla(330, 80%, 50%, 0.2), 0 0 45px hsla(330, 80%, 50%, 0.1);
+  --shadow-cyan: 0 0 15px hsla(180, 80%, 45%, 0.4), 0 0 30px hsla(180, 80%, 45%, 0.2);
+  --shadow-purple: 0 0 15px hsla(280, 80%, 55%, 0.4), 0 0 30px hsla(280, 80%, 55%, 0.2);
+  --shadow-electric: 0 0 15px hsla(240, 80%, 55%, 0.4), 0 0 30px hsla(240, 80%, 55%, 0.2);
+
+  /* Grid Pattern */
+  --grid-size: 40px;
+  --grid-color: hsla(280, 60%, 50%, 0.2);
+
+  /* Max Content Width */
+  --max-width: 1400px;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: var(--gradient-dark) no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: transparent;
+  color: var(--foreground);
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes grid-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(var(--grid-size));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button Base Styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: var(--shadow-neon);
+}
+
+.button-primary:hover {
+  background-color: var(--primary-glow);
+  transform: translateY(-2px);
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  box-shadow: var(--shadow-purple);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-glow);
+  transform: translateY(-2px);
+}
+
+.button-outline {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.button-outline:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Section Styling */
+section {
+  padding: 5rem 2rem;
+  width: 100%;
+}

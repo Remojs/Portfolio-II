@@ -1,0 +1,124 @@
+.heroSection {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.floatingParticles {
+  position: absolute;
+  inset: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 3s ease-in-out infinite;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.heroTextContainer {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.subtitle {
+  display: inline-block;
+  background: var(--gradient-cyber);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.625rem; /* Increased by 30% from 1.25rem */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.3rem; /* Increased by 30% */
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+}
+
+.name {
+  font-size: 4.875rem; /* Increased by 30% from 3.75rem */
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--gradient-neon);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.3rem; /* Increased by 30% */
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+  text-shadow: var(--shadow-neon);
+}
+
+.title {
+  font-size: 2.925rem; /* Increased by 30% from 2.25rem */
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 2.6rem; /* Increased by 30% */
+  font-family: 'Orbitron', 'Roboto Mono', monospace;
+}
+
+.description {
+  font-size: 1.46rem; /* Increased by 30% from 1.125rem */
+  max-width: 998px; /* Increased by 30% from 768px */
+  margin: 0 auto 2.6rem; /* Increased bottom margin by 30% */
+  color: var(--muted-foreground);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1.3rem; /* Increased by 30% from 1rem */
+  justify-content: center;
+  margin-top: 2.6rem; /* Increased by 30% from 2rem */
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
