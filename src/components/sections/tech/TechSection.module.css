@@ -25,7 +25,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -49,6 +49,13 @@
   color: var(--primary);
   text-align: center;
   font-family: 'Orbitron', 'Roboto Mono', monospace;
+}
+
+.aiTitle {
+  background: linear-gradient(90deg, #6A3093, #A044FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .techList {
@@ -84,6 +91,10 @@
   height: 40px;
   margin-bottom: 0.5rem;
   filter: drop-shadow(0 0 3px var(--primary));
+}
+
+.aiIcon {
+  filter: drop-shadow(0 0 5px #A044FF);
 }
 
 .techIconLabel {

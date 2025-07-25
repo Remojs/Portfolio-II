@@ -12,7 +12,6 @@ import shevaImg from '../../../assets/pages/sheva-page.png';
 import steelImg from '../../../assets/pages/steel-page.png';
 import talentforgeImg from '../../../assets/pages/talentforge-page.png';
 import taskifyImg from '../../../assets/pages/taskify-page.png';
-import pentacraftImg from '../../../assets/pages/pentacraft.png';
 
 const ProjectsSection = () => {
   const projects = [
@@ -21,7 +20,7 @@ const ProjectsSection = () => {
       title: 'Taskify',
       description: 'Una aplicación de gestión de tareas con funcionalidad Kanban, que permite organizar proyectos, asignar responsables y realizar seguimiento de progreso.',
       image: taskifyImg,
-      technologies: ['Node.js', 'React', 'CSS'],
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit'],
       liveUrl: 'https://taskify-project.vercel.app',
       codeUrl: 'https://github.com/remojs/taskify'
     },
@@ -30,7 +29,7 @@ const ProjectsSection = () => {
       title: 'TalentForge',
       description: 'Plataforma de gestión de talento empresarial que facilita la contratación, seguimiento y desarrollo profesional de los empleados.',
       image: talentforgeImg,
-      technologies: ['Node.js', 'Angular', 'CSS'],
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
       liveUrl: 'https://talentforge.vercel.app',
       codeUrl: 'https://github.com/remojs/talentforge'
     },
@@ -39,7 +38,7 @@ const ProjectsSection = () => {
       title: 'RickVerse',
       description: 'Aplicación web interactiva basada en la serie Rick y Morty, que permite explorar personajes, episodios y locaciones del multiverso.',
       image: rickverseImg,
-      technologies: ['React', 'Rick & Morty API', 'CSS'],
+      technologies: ['React', 'Rick & Morty API', 'CSS Modules', 'Axios'],
       liveUrl: 'https://rickverse-explorer.vercel.app',
       codeUrl: 'https://github.com/remojs/rickverse'
     },
@@ -48,7 +47,7 @@ const ProjectsSection = () => {
       title: 'Meraki Design Studio',
       description: 'Portafolio para un estudio de diseño con galería de proyectos, servicios ofrecidos y formulario de contacto para potenciales clientes.',
       image: merakiImg,
-      technologies: ['React', 'CSS Modules', 'Figma'],
+      technologies: ['React', 'Framer Motion', 'Styled Components', 'EmailJS'],
       liveUrl: 'https://meraki-design.vercel.app',
       codeUrl: 'https://github.com/remojs/meraki-design'
     },
@@ -57,7 +56,7 @@ const ProjectsSection = () => {
       title: 'PokéLanding',
       description: 'Landing page interactiva de Pokémon que permite buscar y explorar información detallada sobre diferentes Pokémon y sus características.',
       image: pokelandingImg,
-      technologies: ['React', 'API propia', 'CSS'],
+      technologies: ['JavaScript', 'PokéAPI', 'HTML5', 'CSS3'],
       liveUrl: 'https://pokelanding.vercel.app',
       codeUrl: 'https://github.com/remojs/pokelanding'
     },
@@ -66,7 +65,7 @@ const ProjectsSection = () => {
       title: 'GFTA Academy',
       description: 'Plataforma educativa para una academia de fútbol que incluye información sobre programas, entrenadores y sistema de inscripción para estudiantes.',
       image: gftaImg,
-      technologies: ['Node.js', 'Express', 'MongoDB', 'Mongoose'],
+      technologies: ['React', 'Firebase', 'Tailwind CSS', 'React Router'],
       liveUrl: 'https://gfta-academy.vercel.app',
       codeUrl: 'https://github.com/remojs/gfta-academy'
     },
@@ -75,34 +74,34 @@ const ProjectsSection = () => {
       title: 'Cervantes Librería',
       description: 'E-commerce de librería con catálogo de libros, sistema de búsqueda, carrito de compras y pasarela de pagos integrada.',
       image: cervantesImg,
-      technologies: ['React', 'CSS', 'Figma'],
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Stripe'],
       liveUrl: 'https://cervantes-libreria.vercel.app',
       codeUrl: 'https://github.com/remojs/cervantes-libreria'
     },
     {
       id: 8,
-      title: 'Steel Games',
-      description: 'Sitio web para un estudio de videojuegos con presentación de títulos, planes de suscripción y sistema de compras digitales.',
+      title: 'Steel Gym',
+      description: 'Sitio web para un gimnasio con presentación de instalaciones, planes de membresía y sistema de reserva de clases.',
       image: steelImg,
-      technologies: ['Node.js', 'MongoDB', 'React', 'CSS'],
-      liveUrl: 'https://steel-games.vercel.app',
-      codeUrl: 'https://github.com/remojs/steel-games'
+      technologies: ['React', 'Next.js', 'MongoDB', 'Tailwind CSS'],
+      liveUrl: 'https://steel-gym.vercel.app',
+      codeUrl: 'https://github.com/remojs/steel-gym'
     },
     {
       id: 9,
-      title: 'Bresser LKV',
+      title: 'Bresser Óptica',
       description: 'Tienda online especializada en productos ópticos como telescopios, microscopios y binoculares con asesoramiento especializado.',
       image: bresserImg,
-      technologies: ['Angular', 'Laravel'],
-      liveUrl: 'https://bresser-lkv.vercel.app',
-      codeUrl: 'https://github.com/remojs/bresser-lkv'
+      technologies: ['React', 'Redux', 'Firebase', 'Material UI'],
+      liveUrl: 'https://bresser-optica.vercel.app',
+      codeUrl: 'https://github.com/remojs/bresser-optica'
     },
     {
       id: 10,
       title: 'GeoCX Solutions',
       description: 'Sitio web corporativo para una empresa de soluciones geoespaciales con presentación de servicios, casos de éxito y blog técnico.',
       image: geocxImg,
-      technologies: ['WebSockets', 'Angular', 'CSS', 'Laravel', 'PHP'],
+      technologies: ['React', 'Leaflet', 'Sanity CMS', 'Styled Components'],
       liveUrl: 'https://geocx-solutions.vercel.app',
       codeUrl: 'https://github.com/remojs/geocx-solutions'
     },
@@ -111,7 +110,7 @@ const ProjectsSection = () => {
       title: 'Sheva Analytics',
       description: 'Dashboard de análisis de datos empresariales con visualizaciones interactivas, reportes personalizados y métricas de rendimiento.',
       image: shevaImg,
-      technologies: ['Angular', 'Laravel', 'CSS Modules'],
+      technologies: ['React', 'D3.js', 'Express', 'MongoDB', 'Chart.js'],
       liveUrl: 'https://sheva-analytics.vercel.app',
       codeUrl: 'https://github.com/remojs/sheva-analytics'
     },
@@ -120,18 +119,9 @@ const ProjectsSection = () => {
       title: 'Pinochueco',
       description: 'Aplicación web para un estudio de diseño de muebles artesanales con galería de productos, proceso de fabricación y sistema de cotización.',
       image: pinochueco,
-      technologies: ['PHP', 'Symfony', 'HTML', 'CSS'],
+      technologies: ['React', 'Node.js', 'Firebase', 'Tailwind CSS'],
       liveUrl: 'https://pinochueco-design.vercel.app',
       codeUrl: 'https://github.com/remojs/pinochueco'
-    },
-    {
-      id: 13,
-      title: 'Pentacraft',
-      description: 'Mod de Minecraft con nuevos bloques, ítems y mecánicas de juego, centrado en la exploración y construcción.',
-      image: pentacraftImg,
-      technologies: ['Java', 'Fabric API'],
-      liveUrl: 'https://pentacraft-mod.vercel.app',
-      codeUrl: 'https://github.com/remojs/pentacraft'
     }
   ];
 
@@ -146,7 +136,7 @@ const ProjectsSection = () => {
         <h2 className={`${styles.title} fadeIn`}>Proyectos</h2>
         
         <div className={styles.grid}>
-          {projects.map((project, index) => (
+          {projects.slice(0, 9).map((project, index) => (
             <div 
               key={project.id} 
               className={`${styles.projectCard} fadeIn`} 

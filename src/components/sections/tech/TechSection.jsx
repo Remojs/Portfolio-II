@@ -19,15 +19,22 @@ const TechSection = () => {
     'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
     'JAVA': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     
+    // IA
+    'HuggingFace': 'https://huggingface.co/front/assets/huggingface_logo.svg',
+    'n8n': 'https://n8n.io/favicon.ico',
+    'Zapier': 'https://cdn.zapier.com/zapier/images/favicon.ico',
+    'ElevenLabs': 'https://elevenlabs.io/favicon.ico',
+    'Copilot': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    
     // Tools
     'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
     'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
     'VS Code': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
-    'Copilot': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', // Using GitHub icon as placeholder for Copilot
     'Figma': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
     'Docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
     'Webpack': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
     'Photoshop': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
+    'Obsidian': 'https://obsidian.md/favicon.ico',
   };
 
   const technologies = {
@@ -37,8 +44,11 @@ const TechSection = () => {
     backend: [
       'PHP', 'Express', 'Node.js', 'MySQL', 'MongoDB', 'JAVA'
     ],
+    ai: [
+      'HuggingFace', 'n8n', 'Zapier', 'ElevenLabs', 'Copilot'
+    ],
     tools: [
-      'Git', 'GitHub', 'VS Code', 'Copilot', 'Figma', 'Docker', 'Webpack', 'Photoshop'
+      'Git', 'GitHub', 'VS Code', 'Figma', 'Docker', 'Webpack', 'Photoshop', 'Obsidian'
     ]
   };
 
@@ -88,6 +98,27 @@ const TechSection = () => {
                     src={techIcons[tech]} 
                     alt={tech} 
                     className={styles.techIcon} 
+                  />
+                  <span className={styles.techIconLabel}>{tech}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className={`${styles.techCategory} fadeIn`} style={{ animationDelay: '400ms' }}>
+            <h3 className={`${styles.categoryTitle} ${styles.aiTitle}`}>IA</h3>
+            <div className={styles.techGrid}>
+              {technologies.ai.map((tech, index) => (
+                <div 
+                  key={index} 
+                  className={`${styles.techIconItem} fadeIn`} 
+                  style={{ animationDelay: `${index * 100 + 500}ms` }}
+                  title={tech}
+                >
+                  <img 
+                    src={techIcons[tech]} 
+                    alt={tech} 
+                    className={`${styles.techIcon} ${styles.aiIcon}`}
                   />
                   <span className={styles.techIconLabel}>{tech}</span>
                 </div>
