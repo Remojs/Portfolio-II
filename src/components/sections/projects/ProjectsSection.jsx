@@ -2,9 +2,11 @@ import styles from './ProjectsSection.module.css';
 // Importar las imágenes de los proyectos
 import bresserImg from '../../../assets/pages/bresser-page.png';
 import cervantesImg from '../../../assets/pages/cervantes-page.png';
+import cruzdelsurImg from '../../../assets/pages/cruzdelsur.png';
 import geocxImg from '../../../assets/pages/geocx-page.png';
 import gftaImg from '../../../assets/pages/gfta-page.png';
 import merakiImg from '../../../assets/pages/meraki-page.png';
+import pentacraftImg from '../../../assets/pages/pentacraft.png';
 import pinochueco from '../../../assets/pages/pinochueco-page.png';
 import pokelandingImg from '../../../assets/pages/pokelanding-page.png';
 import rickverseImg from '../../../assets/pages/rickverse-page.png';
@@ -27,7 +29,7 @@ const ProjectsSection = () => {
     {
       id: 2,
       title: 'TalentForge',
-      description: 'Plataforma de gestión de talento empresarial que facilita la contratación, seguimiento y desarrollo profesional de los empleados.',
+      description: 'Plataforma de cursos',
       image: talentforgeImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
       liveUrl: 'https://talentforge.vercel.app',
@@ -62,66 +64,84 @@ const ProjectsSection = () => {
     },
     {
       id: 6,
-      title: 'GFTA Academy',
-      description: 'Plataforma educativa para una academia de fútbol que incluye información sobre programas, entrenadores y sistema de inscripción para estudiantes.',
+      title: 'Gotta Fetch Them All',
+      description: 'API de pokemon',
       image: gftaImg,
-      technologies: ['React', 'Firebase', 'Tailwind CSS', 'React Router'],
+      technologies: ['React', 'MongoDB', 'Express', 'Node.js'],
       liveUrl: 'https://gfta-academy.vercel.app',
       codeUrl: 'https://github.com/remojs/gfta-academy'
     },
     {
       id: 7,
-      title: 'Cervantes Librería',
-      description: 'E-commerce de librería con catálogo de libros, sistema de búsqueda, carrito de compras y pasarela de pagos integrada.',
+      title: 'Cervantes',
+      description: 'Landing page para importante firma de abogados en mexico',
       image: cervantesImg,
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Stripe'],
+      technologies: ['React', 'CSS Modules'],
       liveUrl: 'https://cervantes-libreria.vercel.app',
       codeUrl: 'https://github.com/remojs/cervantes-libreria'
     },
     {
       id: 8,
-      title: 'Steel Gym',
-      description: 'Sitio web para un gimnasio con presentación de instalaciones, planes de membresía y sistema de reserva de clases.',
+      title: 'Steel Games',
+      description: 'Sitio web clon de Steam',
       image: steelImg,
-      technologies: ['React', 'Next.js', 'MongoDB', 'Tailwind CSS'],
+      technologies: ['React', 'CSS', 'Node.js', 'Games API', 'MongoDB'],
       liveUrl: 'https://steel-gym.vercel.app',
       codeUrl: 'https://github.com/remojs/steel-gym'
     },
     {
       id: 9,
-      title: 'Bresser Óptica',
-      description: 'Tienda online especializada en productos ópticos como telescopios, microscopios y binoculares con asesoramiento especializado.',
+      title: 'Bresser LKV',
+      description: 'Tienda online orientada al rubro de mecanica de camiones',
       image: bresserImg,
-      technologies: ['React', 'Redux', 'Firebase', 'Material UI'],
+      technologies: ['React', 'Redux', 'Css Modules'],
       liveUrl: 'https://bresser-optica.vercel.app',
       codeUrl: 'https://github.com/remojs/bresser-optica'
     },
     {
       id: 10,
-      title: 'GeoCX Solutions',
-      description: 'Sitio web corporativo para una empresa de soluciones geoespaciales con presentación de servicios, casos de éxito y blog técnico.',
+      title: 'GeoCX',
+      description: 'Plataforma de gestion de personal de construccion, con geolocalizacion y seguimiento de proyectos.',
       image: geocxImg,
-      technologies: ['React', 'Leaflet', 'Sanity CMS', 'Styled Components'],
+      technologies: ['Angular', 'Websockets', 'Symphony', 'TypeScript'],
       liveUrl: 'https://geocx-solutions.vercel.app',
       codeUrl: 'https://github.com/remojs/geocx-solutions'
     },
     {
       id: 11,
-      title: 'Sheva Analytics',
-      description: 'Dashboard de análisis de datos empresariales con visualizaciones interactivas, reportes personalizados y métricas de rendimiento.',
+      title: 'Sheva Solutions',
+      description: 'Tienda online de electronica',
       image: shevaImg,
-      technologies: ['React', 'D3.js', 'Express', 'MongoDB', 'Chart.js'],
+      technologies: ['Angular', 'CSS', 'PHP', 'TypeScript'],
       liveUrl: 'https://sheva-analytics.vercel.app',
       codeUrl: 'https://github.com/remojs/sheva-analytics'
     },
     {
       id: 12,
       title: 'Pinochueco',
-      description: 'Aplicación web para un estudio de diseño de muebles artesanales con galería de productos, proceso de fabricación y sistema de cotización.',
+      description: 'Aplicación web para un parque de cabañas y glampings con galería de alojamientos, sistema de reservas y contacto.',
       image: pinochueco,
-      technologies: ['React', 'Node.js', 'Firebase', 'Tailwind CSS'],
+      technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://pinochueco-design.vercel.app',
       codeUrl: 'https://github.com/remojs/pinochueco'
+    },
+    {
+      id: 13,
+      title: 'Cruz del Sur',
+      description: 'Sitio web corporativo para empresa de logistica, recruiting, academy, vuelos y más, del mundo de la aviacion',
+      image: cruzdelsurImg,
+      technologies: ['React', 'CSS Modules', 'Scroll Animation'],
+      liveUrl: 'https://cruzdelsur-logistics.vercel.app',
+      codeUrl: 'https://github.com/remojs/cruzdelsur'
+    },
+    {
+      id: 14,
+      title: 'PentaCraft Mod',
+      description: 'Mod para Minecraft que añade nuevas mecánicas de juego, criaturas y biomas personalizados.',
+      image: pentacraftImg,
+      technologies: ['Fabric', 'Java', 'Minecraft Modding'],
+      liveUrl: 'https://pentacraft-gaming.vercel.app',
+      codeUrl: 'https://github.com/remojs/pentacraft'
     }
   ];
 
@@ -136,7 +156,7 @@ const ProjectsSection = () => {
         <h2 className={`${styles.title} fadeIn`}>Proyectos</h2>
         
         <div className={styles.grid}>
-          {projects.slice(0, 9).map((project, index) => (
+          {projects.map((project, index) => (
             <div 
               key={project.id} 
               className={`${styles.projectCard} fadeIn`} 
