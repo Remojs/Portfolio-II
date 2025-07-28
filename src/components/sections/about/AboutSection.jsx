@@ -24,20 +24,15 @@ const AboutSection = () => {
           
           <div className={styles.text}>
             <p className={`${styles.paragraph} fadeInRight delay-100`}>
-              Hi! I'm <span className={styles.highlight}>Thiago Zambonini</span>, a passionate Frontend Developer who loves technology.
-              I build engaging web interfaces, explore backend development, and create game mods.
-              I enjoy solving problems and improving user experiences.
+              Hi! I'm <span className={styles.highlight}>Thiago Zambonini</span>, a frontend developer with a passion for technology. I enjoy creating attractive web interfaces, developing backend systems, and creating mods for video games. I like solving problems and improving the user experience.
             </p>
             
             <p className={`${styles.paragraph} fadeInRight delay-200`}>
-              I dive into AI and craft my own tools, always pushing my skills forward.
-              My personal projects showcase my curiosity and drive to make an impact.
-              I'm driven by a desire to learn and experiment with new technologies.
+              I am passionate about artificial intelligence and create my own tools, always improving my skills. My personal projects reflect my curiosity and desire to make an impact. I am motivated by the desire to learn and experiment with new technologies.
             </p>
             
             <p className={`${styles.paragraph} fadeInRight delay-300`}>
-              I thrive on collaboration and continuous learning, celebrating every small win.
-              I'm eager for challenges that fuel my passion and help me grow.
+              I enjoy collaborating and continuously learning, pushing my abilities to the limit. I am eager to take on challenges that fuel my passion, allow me to grow, and leave a mark on the world.
             </p>
             
             <div className={styles.stats}>

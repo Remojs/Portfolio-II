@@ -63,8 +63,7 @@ const HeroSection = () => {
           <h1 className={styles.name}>Thiago Zambonini</h1>
           <h2 className={styles.title}>{text}<span className="cursor">|</span></h2>
           <p className={styles.description}>
-            Passionate developer building amazing web experiences with the latest technologies.
-            Creating fast, responsive, and user-friendly applications.
+            I am Thiago Zambonini, a developer passionate about technology, with a keen interest in artificial intelligence and the development of interfaces that make a significant impact.
           </p>
           <div className={styles.buttonContainer}>
             <Button onClick={() => scrollToSection("projects")}>View Projects</Button>
