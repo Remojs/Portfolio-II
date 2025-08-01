@@ -9,6 +9,7 @@ import merakiImg from '../../../assets/pages/meraki-page.png';
 import pentacraftImg from '../../../assets/pages/pentacraft.png';
 import pinochueco from '../../../assets/pages/pinochueco-page.png';
 import pokelandingImg from '../../../assets/pages/pokelanding-page.png';
+import remocarsImg from '../../../assets/pages/remocars.png';
 import rickverseImg from '../../../assets/pages/rickverse-page.png';
 import shevaImg from '../../../assets/pages/sheva-page.png';
 import steelImg from '../../../assets/pages/steel-page.png';
@@ -142,6 +143,15 @@ const ProjectsSection = () => {
       technologies: ['Fabric', 'Java', 'Minecraft Modding'],
       liveUrl: 'https://pentacraft-gaming.vercel.app',
       codeUrl: 'https://github.com/remojs/pentacraft'
+    },
+    {
+      id: 15,
+      title: 'RemoCars',
+      description: 'Plataforma de alquiler de vehículos con sistema de reservas, geolocalización y gestión de flota.',
+      image: remocarsImg,
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
+      liveUrl: 'https://remocars.vercel.app',
+      codeUrl: 'https://github.com/remojs/remocars'
     }
   ];
 
