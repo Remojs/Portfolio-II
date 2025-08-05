@@ -21,16 +21,16 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: 'Taskify',
-      description: 'Una aplicación de gestión de tareas con funcionalidad Kanban, que permite organizar proyectos, asignar responsables y realizar seguimiento de progreso.',
+      description: 'Modulo de gestion de tareas independiente, con conexion a calendar y a todoist, escalable y modular para aplicar a mis proyectos',
       image: taskifyImg,
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit'],
+      technologies: ['TypeScript', 'Tailwind CSS', 'Google Cloud', 'OAuth'],
       liveUrl: 'https://taskify-project.vercel.app',
       codeUrl: 'https://github.com/remojs/taskify'
     },
     {
       id: 2,
       title: 'TalentForge',
-      description: 'Plataforma de cursos',
+      description: 'Plataforma de cursos para proyecto final de cursada, con gestion de cuenteas, usuarios, roles y mas.',
       image: talentforgeImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
       liveUrl: 'https://talentforge.vercel.app',

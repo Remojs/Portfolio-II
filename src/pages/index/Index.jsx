@@ -24,14 +24,13 @@ const Index = () => {
       
       {/* Footer */}
       <footer className={styles.footer}>
-        {/* Grid Background */}
         <div className="gridBackground">
           <div className="gridPattern" />
         </div>
         
         <div className={styles.footerContent}>
           <p className={styles.footerText}>
-            © 2025 Thiago Zambonini. Coded with ❤️ and lots of ☕
+            © 2025 Thiago Zambonini. Coded with lots of ☕
           </p>
         </div>
       </footer>
