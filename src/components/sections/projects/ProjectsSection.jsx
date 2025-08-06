@@ -20,15 +20,24 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
+      title: 'PokéLanding',
+      description: 'Una Pokédex moderna con diseño retro Game Boy, construida en React. Incluye búsqueda global, filtros por tipo, 9 temas dinámicos, infinite scroll y efectos 8-bit auténticos.',
+      image: pokelandingImg,
+      technologies: ['JavaScript', 'React', 'Vite', 'CSS Modules', 'PostCSS', 'React Query', 'API Propia'],
+      liveUrl: 'https://pokelandingg.vercel.app',
+      codeUrl: 'https://github.com/Remojs/Pokelanding'
+    },
+    {
+      id: 2,
       title: 'Taskify',
       description: 'Modulo de gestion de tareas independiente, con conexion a calendar y a todoist, escalable y modular para aplicar a mis proyectos',
       image: taskifyImg,
-      technologies: ['TypeScript', 'Tailwind CSS', 'Google Cloud', 'OAuth'],
+      technologies: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'Shadcn-ui', 'Google Cloud', 'OAuth', 'Supabase'],
       liveUrl: 'https://taskify-project.vercel.app',
       codeUrl: 'https://github.com/remojs/taskify'
     },
     {
-      id: 2,
+      id: 3,
       title: 'TalentForge',
       description: 'Plataforma de cursos para proyecto final de cursada, con gestion de cuenteas, usuarios, roles y mas.',
       image: talentforgeImg,
@@ -37,7 +46,7 @@ const ProjectsSection = () => {
       codeUrl: 'https://github.com/remojs/talentforge'
     },
     {
-      id: 3,
+      id: 4,
       title: 'RickVerse',
       description: 'Aplicación web interactiva basada en la serie Rick y Morty, que permite explorar personajes, episodios y locaciones del multiverso.',
       image: rickverseImg,
@@ -46,22 +55,13 @@ const ProjectsSection = () => {
       codeUrl: 'https://github.com/remojs/rickverse'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Meraki Design Studio',
       description: 'Portafolio para un estudio de diseño con galería de proyectos, servicios ofrecidos y formulario de contacto para potenciales clientes.',
       image: merakiImg,
       technologies: ['React', 'Framer Motion', 'Styled Components', 'EmailJS'],
       liveUrl: 'https://meraki-design.vercel.app',
       codeUrl: 'https://github.com/remojs/meraki-design'
-    },
-    {
-      id: 5,
-      title: 'PokéLanding',
-      description: 'Landing page interactiva de Pokémon que permite buscar y explorar información detallada sobre diferentes Pokémon y sus características.',
-      image: pokelandingImg,
-      technologies: ['JavaScript', 'PokéAPI', 'HTML5', 'CSS3'],
-      liveUrl: 'https://pokelanding.vercel.app',
-      codeUrl: 'https://github.com/remojs/pokelanding'
     },
     {
       id: 6,
@@ -148,6 +148,15 @@ const ProjectsSection = () => {
       id: 15,
       title: 'RemoCars',
       description: 'Plataforma de alquiler de vehículos con sistema de reservas, geolocalización y gestión de flota.',
+      image: remocarsImg,
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
+      liveUrl: 'https://remocars.vercel.app',
+      codeUrl: 'https://github.com/remojs/remocars'
+    },
+    {
+      id: 16,
+      title: 'IPM',
+      description: '',
       image: remocarsImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
       liveUrl: 'https://remocars.vercel.app',
