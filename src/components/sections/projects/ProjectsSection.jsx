@@ -144,8 +144,8 @@ const ProjectsSection = () => {
       description: 'Mod para Minecraft que añade nuevas mecánicas de juego, criaturas y biomas personalizados.',
       image: pentacraftImg,
       technologies: ['Fabric', 'Java', 'Minecraft Modding'],
-      liveUrl: 'https://pentacraft-gaming.vercel.app',
-      codeUrl: 'https://github.com/remojs/pentacraft'
+      liveUrl: 'https://github.com/remojs/pentacraft-ores',
+      codeUrl: 'https://github.com/remojs/pentacraft-ores'
     },
     {
       id: 15,
