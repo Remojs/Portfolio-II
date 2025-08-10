@@ -18,6 +18,7 @@ import taskifyImg from '../../../assets/pages/taskify-page.webp';
 import lanpartyImg from '../../../assets/pages/lan-party.webp';
 import ipmImg from '../../../assets/pages/ipm.webp';
 import boniImg from '../../../assets/pages/boni.webp';
+import mazamitlaImg from '../../../assets/pages/mazamitla-page.webp';
 
 const ProjectsSection = () => {
   const projects = [
@@ -133,41 +134,41 @@ const ProjectsSection = () => {
       id: 13,
       title: 'Mazamitla Sierra Tours',
       description: 'Plataforma de venta y gestion de turismo en las sierras de Mazamitla, en mexico, con gestion de tours, venta y alquiler de cabañas, gestion de usuarios y ventas mediante intranet, entre otros.',
-      image: pinochueco,
-      technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'MercadoPago', 'Docker'],
-      liveUrl: 'https://pinochueco.com',
+      image: mazamitlaImg,
+      technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'Driver.js', 'MercadoPago', 'Docker'],
+      liveUrl: 'https://www.mazamitlasierratours.com',
       codeUrl: 'https://github.com/Remojs'
     },
     {
-      id: 13,
+      id: 14,
       title: 'Cruz del Sur',
-      description: 'Sitio web corporativo para empresa de logistica, recruiting, academy, vuelos y más, del mundo de la aviacion',
+      description: 'Sitio web corporativo para empresa emergente del serctor de aviacion, con apartado para webinars, gestion de correos y recruitment, entre otras areas.',
       image: cruzdelsurImg,
-      technologies: ['React', 'CSS Modules', 'Scroll Animation'],
+      technologies: ['React', 'CSS Modules', 'Scroll Animation', 'EmailJS'],
       liveUrl: 'https://cruzdelsur-aviacion.com',
       codeUrl: 'https://github.com/remojs/cruzdelsur'
     },
     {
-      id: 14,
-      title: 'PentaCraft Mod',
-      description: 'Mod para Minecraft que añade nuevas mecánicas de juego, criaturas y biomas personalizados.',
+      id: 15,
+      title: 'Pentacraft Mod',
+      description: 'Mod para Minecraft para la version 1.16.5 que añade nuevas mecánicas de juego, armas, armaduras, diseños en 3d y pixel art, criaturas y biomas personalizados.',
       image: pentacraftImg,
-      technologies: ['Fabric', 'Java', 'Minecraft Modding'],
+      technologies: ['Fabric', 'Java', 'Minecraft Modding', '3D', 'Pixel Art'],
       liveUrl: 'https://github.com/remojs/pentacraft-ores',
       codeUrl: 'https://github.com/remojs/pentacraft-ores'
     },
     {
-      id: 15,
-      title: 'RemoCars',
-      description: 'Plataforma de alquiler de vehículos con sistema de reservas, geolocalización y gestión de flota.',
+      id: 16,
+      title: 'Remocars',
+      description: 'Galeria artistica de Autos con animaciones y estilo ',
       image: remocarsImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
       liveUrl: 'https://remocars.vercel.app',
       codeUrl: 'https://github.com/remojs/remocars'
     },
     {
-      id: 16,
-      title: 'IPM',
+      id: 17,
+      title: 'IPM Markings',
       description: 'Landing page para importante empresa de venta de cintas de marcado para tuberias nauticas',
       image: ipmImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
@@ -175,7 +176,7 @@ const ProjectsSection = () => {
       codeUrl: 'https://github.com/remojs/remocars'
     },
     {
-      id: 17,
+      id: 18,
       title: 'Lan Party II: Official Landing',
       description: 'Pagina de evento de gaming local, con lista de juegos, categoria, precios, copias y demas informacion',
       image: lanpartyImg,
@@ -184,11 +185,11 @@ const ProjectsSection = () => {
       codeUrl: 'https://github.com/Remojs/Lan-Party-Landing'
     },
     {
-      id: 18,
+      id: 19,
       title: 'Boni Assistant',
       description: 'Landing page del Launch time, data y demas de BONI AI Assistant, el mejor asistente de IA del mercado',
       image: boniImg,
-      technologies: ['Javascript', 'React', 'CSS Modules'],
+      technologies: ['Javascript', 'React', 'CSS Modules', 'Scroll Animation'],
       liveUrl: 'https://boniassistant.vercel.app',
       codeUrl: 'https://github.com/Remojs/Boni-AI'
     }
