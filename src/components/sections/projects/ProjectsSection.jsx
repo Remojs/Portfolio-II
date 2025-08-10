@@ -78,7 +78,7 @@ const ProjectsSection = () => {
     {
       id: 7,
       title: 'Cervantes Estudio Juridico',
-      description: 'Landing page para importante firma de abogados en mexico',
+      description: 'Pagina oficial de importante firma de abogados en mexico, con referencias a casos de exito y formulario de contacto.',
       image: cervantesImg,
       technologies: ['Typescript', 'React', 'CSS Modules', 'Scroll Animation', 'EmailJS', ],
       liveUrl: 'https://cervantes-murex.vercel.app',
@@ -96,36 +96,45 @@ const ProjectsSection = () => {
     {
       id: 9,
       title: 'Bresser LKV',
-      description: 'Tienda online orientada al rubro de mecanica de camiones',
+      description: 'Tienda online orientada al rubro de mecanica de camiones de importante empresa de autopartes alemana, con carrusel y detalle de productos, tablas de administracion y gestion de productos mediante intranet',
       image: bresserImg,
-      technologies: ['React', 'Redux', 'Css Modules'],
+      technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'Docker'],
       liveUrl: 'https://github.com/Remojs',
       codeUrl: 'https://github.com/Remojs'
     },
     {
       id: 10,
       title: 'GeoCX',
-      description: 'Plataforma de gestion de personal de construccion, con geolocalizacion y seguimiento de proyectos.',
+      description: 'Plataforma de gestion de personal de construccion, con geolocalizacion para check-in/check-out, gestion y creacion de incidencias, roles, gestion de cuentas, entre otros',
       image: geocxImg,
-      technologies: ['Angular', 'Websockets', 'Symphony', 'TypeScript'],
+      technologies: ['TypeScript', 'Angular', 'CSS Modules', 'Websockets', 'PHP', 'Symfony', 'Stripe', 'Docker'],
       liveUrl: 'https://github.com/Remojs',
       codeUrl: 'https://github.com/Remojs'
     },
     {
       id: 11,
       title: 'Sheva Solutions',
-      description: 'Tienda online de electronica',
+      description: 'Tienda online de venta de equipos electronicos con gestion de productos, panel de ventas y visitas, cargas dinamicas, entre otros.',
       image: shevaImg,
-      technologies: ['Angular', 'CSS', 'PHP', 'TypeScript'],
+       technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://ssheva.com',
       codeUrl: 'https://github.com/Remojs'
     },
     {
       id: 12,
       title: 'Pinochueco',
-      description: 'Aplicación web para un parque de cabañas y glampings con galería de alojamientos, sistema de reservas y contacto.',
+      description: 'Aplicación web para parque de cabañas y glampings con galería de alojamientos, sistema de reservas y contacto.',
       image: pinochueco,
       technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://pinochueco.com',
+      codeUrl: 'https://github.com/Remojs'
+    },
+    {
+      id: 13,
+      title: 'Mazamitla Sierra Tours',
+      description: 'Plataforma de venta y gestion de turismo en las sierras de Mazamitla, en mexico, con gestion de tours, venta y alquiler de cabañas, gestion de usuarios y ventas mediante intranet, entre otros.',
+      image: pinochueco,
+      technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'MercadoPago', 'Docker'],
       liveUrl: 'https://pinochueco.com',
       codeUrl: 'https://github.com/Remojs'
     },
