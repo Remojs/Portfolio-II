@@ -82,7 +82,7 @@ const ProjectsSection = () => {
       description: 'Pagina oficial de importante firma de abogados en mexico, con referencias a casos de exito y formulario de contacto.',
       image: cervantesImg,
       technologies: ['Typescript', 'React', 'CSS Modules', 'Scroll Animation', 'EmailJS', ],
-      liveUrl: 'https://cervantes-murex.vercel.app',
+      liveUrl: 'https://legalescervantes.vercel.app',
       codeUrl: 'https://github.com/Remojs/Cervantes'
     },
     {
