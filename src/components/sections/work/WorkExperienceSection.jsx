@@ -3,6 +3,15 @@ import styles from './WorkExperienceSection.module.css';
 const WorkExperienceSection = () => {
   const experiences = [
     {
+      id: 4,
+      position: 'Frontend Developer',
+      company: 'Smart Racoon',
+      period: 'Feb 2025 - Present',
+      description: 'Creation of a corporate website for a company in the aviation industry. My duties involve designing and developing the web interfaces for the different areas of the site, as well as participating in technical decisions for the project.',
+      technologies: ['React', 'JavaScript', 'TypeScript', 'Framer Motion', 'Figma'],
+      side: 'right'
+    },
+    {
       id: 1,
       position: 'Head of Development',
       company: 'Smart Racoon',
