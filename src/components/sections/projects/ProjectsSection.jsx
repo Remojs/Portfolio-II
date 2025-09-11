@@ -146,7 +146,7 @@ const ProjectsSection = () => {
       image: cruzdelsurImg,
       technologies: ['React', 'CSS Modules', 'Scroll Animation', 'EmailJS'],
       liveUrl: 'https://cruzdelsur-aviacion.com',
-      codeUrl: 'https://github.com/remojs/cruzdelsur'
+      codeUrl: 'https://github.com/Remojs'
     },
     {
       id: 15,
@@ -154,8 +154,8 @@ const ProjectsSection = () => {
       description: 'Mod para Minecraft para la version 1.16.5 que añade nuevas mecánicas de juego, armas, armaduras, diseños en 3d y pixel art, criaturas y biomas personalizados.',
       image: pentacraftImg,
       technologies: ['Fabric', 'Java', 'Minecraft Modding', '3D', 'Pixel Art'],
-      liveUrl: 'https://github.com/remojs/pentacraft-ores',
-      codeUrl: 'https://github.com/remojs/pentacraft-ores'
+      liveUrl: 'https://github.com/Remojs/PentacraftOres-Mod',
+      codeUrl: 'https://github.com/Remojs/PentacraftOres-Mod'
     },
     {
       id: 16,
