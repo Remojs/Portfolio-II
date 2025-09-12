@@ -15,7 +15,7 @@ const WorkExperienceSection = () => {
       id: 1,
       position: 'Head of Development',
       company: 'Smart Racoon',
-      period: 'Feb 2024 - Jan 2025',
+      period: 'Feb 2024 - Feb 2025',
       description: 'Led software development by coordinating multidisciplinary teams and ensuring steady progress across all project areas.',
       technologies: ['React', 'Angular', 'JavaScript', 'TypeScript', 'PHP'],
       side: 'left'
