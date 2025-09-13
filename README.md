@@ -1,6 +1,4 @@
-# Chrome Coder Folio - JSX Version
-
-This is a migrated version of the original Chrome Coder Folio portfolio template, converted from TypeScript, Tailwind CSS, and Shadcn UI to plain JSX with CSS Modules.
+# Thiago Zambonini Portfolio
 
 ## Technology Stack
 
@@ -8,6 +6,7 @@ This is a migrated version of the original Chrome Coder Folio portfolio template
 - Vite
 - CSS Modules
 - React Router DOM
+- EmailJS
 
 ## Features
 
@@ -24,31 +23,6 @@ This is a migrated version of the original Chrome Coder Folio portfolio template
 - `/src/components/ui` - Reusable UI components
 - `/public` - Static assets
 
-## How to Run
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Run development server:
-```bash
-npm run dev
-```
-
-3. Build for production:
-```bash
-npm run build
-```
-
-## Migration Notes
-
-This project was migrated from a TypeScript, Tailwind CSS, and Shadcn UI setup to a simpler setup using:
-- Plain JSX instead of TSX
-- CSS Modules instead of Tailwind
-- Custom UI components instead of Shadcn UI
-
-The visual appearance and functionality remain identical, but the codebase is now more streamlined and has fewer dependencies.
 
 ## Credits
 
