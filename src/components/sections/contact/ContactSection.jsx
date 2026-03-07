@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './ContactSection.module.css';
-import cvFile from '../../../assets/cv/ThiagoZambonini_2025.pdf';
+import cvFile from '../../../assets/cv/CV_Thiago-Zambonini_26.pdf';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,29 +9,31 @@ const ContactSection = () => {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Create mailto link with form data
-    const mailtoLink = `mailto:ThiagoZambonini24@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Reset form after submission
-    alert('Thanks for your message! Your email client should open now.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    setStatus('sending');
+
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error('Failed');
+
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -73,7 +75,7 @@ const ContactSection = () => {
               <div className={styles.infoText}>
                 <span className={styles.infoLabel}>Phone</span>
                 <span className={styles.infoValue}>
-                  <a href="tel:+5492236714237">+54 9 223 671 4237</a>
+                  <a href="tel:+5492235757560">+54 9 223 575 7560</a>
                 </span>
               </div>
             </div>
@@ -88,7 +90,7 @@ const ContactSection = () => {
               <div className={styles.infoText}>
                 <span className={styles.infoLabel}>WhatsApp</span>
                 <span className={styles.infoValue}>
-                  <a href="https://wa.me/5492235388475">+54 9 223 538 8475</a>
+                  <a href="https://wa.me/5492235757560">+54 9 223 575 7560</a>
                 </span>
               </div>
             </div>
@@ -146,17 +148,7 @@ const ContactSection = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a 
-                href="https://x.com/Pateachapas" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-                aria-label="Twitter"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
-              </a>
+
             </div>
           </div>
           
@@ -226,9 +218,15 @@ const ContactSection = () => {
                 />
               </div>
               
-              <button type="submit" className={styles.submitButton}>
-                Send Message
+              <button type="submit" className={styles.submitButton} disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
+              {status === 'success' && (
+                <p className={styles.successMsg}>Message sent successfully!</p>
+              )}
+              {status === 'error' && (
+                <p className={styles.errorMsg}>Something went wrong. Please try again.</p>
+              )}
             </form>
           </div>
         </div>

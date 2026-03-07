@@ -18,6 +18,8 @@ import taskifyImg from '../../../assets/pages/taskify-page.webp';
 import lanpartyImg from '../../../assets/pages/lan-party.webp';
 import ipmImg from '../../../assets/pages/ipm.webp';
 import boniImg from '../../../assets/pages/boni.webp';
+import alBahrImg from '../../../assets/pages/albahr.webp';
+import intkImg from '../../../assets/pages/interaktive.webp';
 import mazamitlaImg from '../../../assets/pages/mazamitla-page.webp';
 
 const ProjectsSection = () => {
@@ -25,173 +27,170 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: 'PokéLanding',
-      description: 'Una Pokédex moderna con diseño retro Game Boy, construida en React. Incluye búsqueda global, filtros por tipo, 9 temas dinámicos, infinite scroll y efectos 8-bit auténticos.',
+      description: 'A modern Pokédex with a retro Game Boy design, built in React. Includes global search, filters by type, color themes, details, team creator, infinite scroll, and authentic 8-bit effects. Made with love for the franchise using my own API.',
       image: pokelandingImg,
-      technologies: ['JavaScript', 'React', 'Vite', 'CSS Modules', 'PostCSS', 'React Query', 'API Propia'],
-      liveUrl: 'https://pokelandingg.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Pokelanding'
+      technologies: ['React', 'React Router', 'React Query', 'Vite', 'ESLint', 'CSS', 'Vercel', 'Render'],
+      liveUrl: 'https://pokelanding-git-main-remojs-projects.vercel.app'
     },
     {
       id: 2,
       title: 'Taskify',
-      description: 'Modulo de gestion de tareas independiente, con conexion a calendar y a todoist, escalable y modular para aplicar a mis proyectos',
+      description: 'Task management module built with feature-based architecture, designed to easily integrate into any project. Includes synchronization with Google Calendar, cloud persistence with Supabase, and an emergency mode with localStorage that guarantees availability in the event of connectivity failures.',
       image: taskifyImg,
       technologies: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'Shadcn-ui', 'Google Cloud', 'OAuth', 'Supabase'],
-      liveUrl: 'https://trytaskify.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Taskify'
+      liveUrl: 'https://trytaskify.vercel.app'
     },
     {
       id: 3,
       title: 'TalentForge',
-      description: 'Plataforma de cursos para proyecto final de cursada, con gestion de cuentas, panel de administracion, pagos con mercado pago y hosting de multimedia en cloudinary.',
+      description: 'Course platform for final course projects, with account management, administration panel, Mercado Pago payments, and multimedia hosting on Cloudinary.',
       image: talentforgeImg,
       technologies: ['Javascript', 'React', 'Redux', 'Tailwind', 'Cloudinary', 'Firebase', 'Mercado Pago', 'Node.js', 'Express', 'MongoDB', ],
-      liveUrl: 'https://github.com/Remojs/Talent-Forge-Frontend',
-      codeUrl: 'https://github.com/Remojs/Talent-Forge-Backend'
+      liveUrl: 'https://github.com/Remojs/Talent-Forge-Frontend'
     },
     {
       id: 4,
       title: 'Rickverse',
-      description: 'Aplicación web interactiva basada en la serie Rick y Morty, que permite explorar personajes, episodios y locaciones del multiverso.',
+      description: 'Interactive web application based on the Rick and Morty series, allowing users to explore characters, episodes, and locations in the multiverse.',
       image: rickverseImg,
       technologies: ['Javascript', 'React', 'Redux', 'CSS', 'Node.js', 'Express', 'MongoDB'],
-      liveUrl: 'https://rickverse.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Rickverse-Frontend'
+      liveUrl: 'https://rickverse.vercel.app'
     },
     {
       id: 5,
       title: 'Meraki Agency',
-      description: 'Página profesional que presenta servicios, portfolio y contacto de MERAKI, con diseño responsivo, animaciones y enfoque en marketing digital.',
+      description: 'Professional website presenting MERAKI\'s services, portfolio, and contact information, with responsive design, animations, and a focus on digital marketing.',
       image: merakiImg,
       technologies: ['Javascript', 'React', 'Vite','CSS Modules', 'EmailJS'],
-      liveUrl: 'https://merakiagency.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Meraki-publicidad'
+      liveUrl: 'https://merakiagency.vercel.app'
     },
     {
       id: 6,
       title: 'Gotta Fetch Them All',
-      description: 'Pagina oficial de mi API de pokemon, contiene la documentacion acerca de los endpoints de la API y como colaborar desde github.',
+      description: 'Official page of my Pokémon API, containing documentation about the API endpoints and how to collaborate on GitHub.',
       image: gftaImg,
       technologies: ['React', 'MongoDB', 'Express', 'Node.js'],
-      liveUrl: 'https://gftapage.vercel.app',
-      codeUrl: 'https://github.com/Remojs/GottaFetchThemAll-Landing'
+      liveUrl: 'https://gftapage.vercel.app'
     },
     {
       id: 7,
-      title: 'Cervantes Estudio Juridico',
-      description: 'Pagina oficial de importante firma de abogados en mexico, con referencias a casos de exito y formulario de contacto.',
-      image: cervantesImg,
-      technologies: ['Typescript', 'React', 'CSS Modules', 'Scroll Animation', 'EmailJS', ],
-      liveUrl: 'https://legalescervantes.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Cervantes'
+      title: 'Intreraktive Solutions',
+      description: 'Official contact page for automation and web solutions company for startups and businesses',
+      image: intkImg,
+      technologies: ['Nextjs', 'Web Domain', 'Web Hosting', 'Mailing Services', 'SEO', 'Google Ads', 'Facebook Ads'],
+      liveUrl: 'https://interaktivesolutions.com'
     },
     {
       id: 8,
       title: 'Steel Games',
-      description: 'Sitio web clon de Steam, API de Rawg y DB propia, realizado para proyecto de cursada (Solo visible en 1920px)',
+      description: 'Steam clone website, Rawg API, and proprietary database, created for a course project (only visible at 1920px—created with exact measurements).',
       image: steelImg,
       technologies: ['Javascript', 'React', 'CSS', 'Rawg API', 'Node.js', 'Express', 'Sequelize', 'PostgreSQL'],
-      liveUrl: 'https://github.com/Remojs/Steel-Games',
-      codeUrl: 'https://github.com/Remojs/Steel-Games'
+      liveUrl: 'https://steel-five.vercel.app/home'
     },
     {
       id: 9,
       title: 'Bresser LKV',
-      description: 'Tienda online orientada al rubro de mecanica de camiones de importante empresa de autopartes alemana, con carrusel y detalle de productos, tablas de administracion y gestion de productos mediante intranet',
+      description: 'Online store focused on truck mechanics for a major German auto parts company, with a carousel and product details, administration tables, and product management via intranet.',
       image: bresserImg,
       technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'Docker'],
-      liveUrl: 'https://github.com/Remojs',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://github.com/Remojs'
     },
     {
       id: 10,
       title: 'GeoCX',
-      description: 'Plataforma de gestion de personal de construccion, con geolocalizacion para check-in/check-out, gestion y creacion de incidencias, roles, gestion de cuentas, entre otros',
+      description: 'Construction personnel management platform, with geolocation for check-in/check-out, incident management and creation, roles, account management, among others.',
       image: geocxImg,
       technologies: ['TypeScript', 'Angular', 'CSS Modules', 'Websockets', 'PHP', 'Symfony', 'Stripe', 'Docker'],
-      liveUrl: 'https://github.com/Remojs',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://geocx-mvp.vercel.app'
     },
     {
       id: 11,
       title: 'Sheva Solutions',
-      description: 'Tienda online de venta de equipos electronicos con gestion de productos, panel de ventas y visitas, cargas dinamicas, entre otros.',
+      description: 'Online store for electronic equipment sales with product management, sales and visit panels, dynamic uploads, among others.',
       image: shevaImg,
        technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://ssheva.com',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://ssheva.com'
     },
     {
       id: 12,
       title: 'Pinochueco',
-      description: 'Aplicación web para parque de cabañas y glampings con galería de alojamientos, sistema de reservas y contacto.',
+      description: 'Web application for a cabin and glamping park, featuring accommodation galleries, a booking system, and contact options.',
       image: pinochueco,
       technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
-      liveUrl: 'https://pinochueco.com',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://pinochueco.com'
     },
     {
       id: 13,
       title: 'Mazamitla Sierra Tours',
-      description: 'Plataforma de venta y gestion de turismo en las sierras de Mazamitla, en mexico, con gestion de tours, venta y alquiler de cabañas, gestion de usuarios y ventas mediante intranet, entre otros.',
+      description: 'Tourism sales and management platform in the Mazamitla mountains, Mexico, with tour management, cabin rental and sales, user management, and intranet-based sales, among others.',
       image: mazamitlaImg,
       technologies: ['Javascript', 'React', 'Redux', 'CSS Modules', 'Driver.js', 'MercadoPago', 'Docker'],
-      liveUrl: 'https://www.mazamitlasierratours.com',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://www.mazamitlasierratours.com'
     },
     {
       id: 14,
       title: 'Cruz del Sur',
-      description: 'Sitio web corporativo para empresa emergente del serctor de aviacion, con apartado para webinars, gestion de correos y recruitment, entre otras areas.',
+      description: 'Corporate website for an emerging aviation company, with sections for webinars, email management, and recruitment, among other areas.',
       image: cruzdelsurImg,
       technologies: ['React', 'CSS Modules', 'Scroll Animation', 'EmailJS'],
-      liveUrl: 'https://cruzdelsur-aviacion.com',
-      codeUrl: 'https://github.com/Remojs'
+      liveUrl: 'https://cruzdelsur-aviacion.com'
     },
     {
       id: 15,
       title: 'Pentacraft Mod',
-      description: 'Mod para Minecraft para la version 1.16.5 que añade nuevas mecánicas de juego, armas, armaduras, diseños en 3d y pixel art, criaturas y biomas personalizados.',
+      description: 'Minecraft mod for version 1.16.5 that adds new gameplay mechanics, weapons, armor, 3D and pixel art designs, custom creatures, and biomes.',
       image: pentacraftImg,
       technologies: ['Fabric', 'Java', 'Minecraft Modding', '3D', 'Pixel Art'],
-      liveUrl: 'https://github.com/Remojs/PentacraftOres-Mod',
-      codeUrl: 'https://github.com/Remojs/PentacraftOres-Mod'
+      liveUrl: 'https://github.com/Remojs/PentacraftOres-Mod'
     },
     {
       id: 16,
       title: 'Remocars',
-      description: 'Galeria artistica de Autos con animaciones y estilo ',
+      description: 'Artistic car gallery with animations and style.',
       image: remocarsImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
-      liveUrl: 'https://remocars.vercel.app',
-      codeUrl: 'https://github.com/remojs/remocars'
+      liveUrl: 'https://remocars.vercel.app'
     },
     {
       id: 17,
       title: 'IPM Markings',
-      description: 'Landing page para importante empresa de venta de cintas de marcado para tuberias nauticas',
+      description: 'Landing page for a major company selling marking tapes for nautical pipes.',
       image: ipmImg,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
-      liveUrl: 'https://ipm-markings.vercel.app',
-      codeUrl: 'https://github.com/remojs/remocars'
+      liveUrl: 'https://ipm-markings.vercel.app'
     },
     {
       id: 18,
       title: 'Lan Party II: Official Landing',
-      description: 'Pagina de evento de gaming local, con lista de juegos, categoria, precios, copias y demas informacion',
+      description: 'Landing page for a local gaming event, featuring a list of games, categories, prices, copies, and other information.',
       image: lanpartyImg,
       technologies: ['Javascript', 'React', 'CSS Modules'],
-      liveUrl: 'https://lan-party-landing.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Lan-Party-Landing'
+      liveUrl: 'https://lan-party-landing.vercel.app'
     },
     {
       id: 19,
       title: 'Boni Assistant',
-      description: 'Landing page del Launch time, data y demas de BONI AI Assistant, el mejor asistente de IA del mercado',
+      description: 'Landing page for the launch time, data, and other information of BONI AI Assistant, the best AI assistant on the market.',
       image: boniImg,
       technologies: ['Javascript', 'React', 'CSS Modules', 'Scroll Animation'],
-      liveUrl: 'https://boniassistant.vercel.app',
-      codeUrl: 'https://github.com/Remojs/Boni-AI'
+      liveUrl: 'https://boniassistant.vercel.app'
+    },
+    {
+      id: 20,
+      title: 'Al-Bahr',
+      description: 'Landing page for a company that imports products from one of the most prestigious perfume houses in the Arab world.',
+      image: alBahrImg,
+      technologies: ['Javascript', 'React', 'CSS Modules', 'Scroll Animation'],
+      liveUrl: 'https://al-bahr.vercel.app'
+    },
+    {
+      id: 21,
+      title: 'Cervantes Estudio Juridico',
+      description: 'Official page of a prominent law firm in Mexico, with references to successful cases and a contact form.',
+      image: cervantesImg,
+      technologies: ['Typescript', 'React', 'CSS Modules', 'Scroll Animation', 'EmailJS', ],
+      liveUrl: 'https://legalescervantes.vercel.app'
     }
 
   ];
@@ -236,15 +235,7 @@ const ProjectsSection = () => {
                     rel="noopener noreferrer"
                     className={`${styles.projectLink} ${styles.liveLink}`}
                   >
-                    Demo en vivo
-                  </a>
-                  <a 
-                    href={project.codeUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className={`${styles.projectLink} ${styles.codeLink}`}
-                  >
-                    Ver Código
+                    View Page
                   </a>
                 </div>
               </div>

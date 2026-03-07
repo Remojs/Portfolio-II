@@ -6,7 +6,6 @@ const Linktree = () => {
     { title: 'Portfolio Website', url: '/' },
     { title: 'GitHub', url: 'https://github.com/remojs' },
     { title: 'LinkedIn', url: 'https://linkedin.com/in/remojs' },
-    { title: 'Twitter', url: 'https://twitter.com/remojs' },
     { title: 'Instagram', url: 'https://instagram.com/remojs' }
   ];
 
