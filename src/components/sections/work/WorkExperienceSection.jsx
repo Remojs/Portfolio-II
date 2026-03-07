@@ -3,10 +3,19 @@ import styles from './WorkExperienceSection.module.css';
 const WorkExperienceSection = () => {
   const experiences = [
     {
+      id: 5,
+      position: 'Founder & Lead Developer',
+      company: 'Interaktive Solutions',
+      period: 'Feb 2026 - Present',
+      description: 'Development of custom digital solutions including modern websites, scalable platforms, REST APIs, and real-time management dashboards. Integration of third-party APIs, process automation, and AI-powered WhatsApp bots focused on improving customer support and conversion.',
+      technologies: ['React', 'Next.js', 'Node.js', 'Express', 'REST APIs', 'SQL', 'NoSQL', 'n8n', 'WhatsApp API', 'Docker', 'Git'],
+      side: 'left'
+    },
+    {
       id: 4,
       position: 'Frontend Developer',
       company: 'Cruz del Sur',
-      period: 'Feb 2025 - Present',
+      period: 'Feb 2025 - Dec 2025',
       description: 'Creation of a corporate website for a company in the aviation industry. My duties involve designing and developing the web interfaces for the different areas of the site, as well as participating in technical decisions for the project.',
       technologies: ['React', 'JavaScript', 'TypeScript', 'Framer Motion', 'Figma'],
       side: 'right'
