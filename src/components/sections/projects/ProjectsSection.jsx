@@ -21,6 +21,7 @@ import boniImg from '../../../assets/pages/boni.webp';
 import alBahrImg from '../../../assets/pages/albahr.webp';
 import intkImg from '../../../assets/pages/interaktive.webp';
 import mazamitlaImg from '../../../assets/pages/mazamitla-page.webp';
+import jjkapiImg from '../../../assets/pages/jjkapi.webp';
 
 const ProjectsSection = () => {
   const projects = [
@@ -106,10 +107,10 @@ const ProjectsSection = () => {
     },
     {
       id: 11,
-      title: 'Sheva Solutions',
-      description: 'Online store for electronic equipment sales with product management, sales and visit panels, dynamic uploads, among others.',
-      image: shevaImg,
-       technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
+      title: 'Jujutsu Kaisen API',
+      description: 'Famous Anime "Jujutsu Kaisen" API with characters, battles, manga volumes, techniques, etc..',
+      image: jjkapiImg,
+       technologies: ['PHP', 'Laravel', 'Sqlite', 'Nextjs'],
       liveUrl: 'https://ssheva.com'
     },
     {
@@ -191,6 +192,14 @@ const ProjectsSection = () => {
       image: cervantesImg,
       technologies: ['Typescript', 'React', 'CSS Modules', 'Scroll Animation', 'EmailJS', ],
       liveUrl: 'https://legalescervantes.vercel.app'
+    },
+    {
+      id: 22,
+      title: 'Sheva Solutions',
+      description: 'Online store for electronic equipment sales with product management, sales and visit panels, dynamic uploads, among others.',
+      image: shevaImg,
+       technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
+      liveUrl: 'https://ssheva.com'
     }
 
   ];
