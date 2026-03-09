@@ -22,6 +22,7 @@ import alBahrImg from '../../../assets/pages/albahr.webp';
 import intkImg from '../../../assets/pages/interaktive.webp';
 import mazamitlaImg from '../../../assets/pages/mazamitla-page.webp';
 import jjkapiImg from '../../../assets/pages/jjkapi.webp';
+import redlsImg from '../../../assets/pages/redls.webp';
 
 const ProjectsSection = () => {
   const projects = [
@@ -111,7 +112,7 @@ const ProjectsSection = () => {
       description: 'Famous Anime "Jujutsu Kaisen" API with characters, battles, manga volumes, techniques, etc..',
       image: jjkapiImg,
        technologies: ['PHP', 'Laravel', 'Sqlite', 'Nextjs'],
-      liveUrl: 'https://ssheva.com'
+      liveUrl: 'https://www.jujutsukaisenapi.site'
     },
     {
       id: 12,
@@ -200,6 +201,13 @@ const ProjectsSection = () => {
       image: shevaImg,
        technologies: ['PHP', 'HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://ssheva.com'
+    },{
+      id: 23,
+      title: 'Red LS Casino',
+      description: 'Contact landing page and online casino redirect, with chip promotions and margins.',
+      image: redlsImg,
+       technologies: ['Nextjs', 'Tailwind CSS', 'Vercel'],
+      liveUrl: 'https://red-ls-casino.vercel.app'
     }
 
   ];
